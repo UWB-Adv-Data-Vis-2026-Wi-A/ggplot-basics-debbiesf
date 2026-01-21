@@ -20,8 +20,9 @@ p <- ggplot(data = gapminder,
             mapping = aes(x = gdpPercap,
                           y = lifeExp))
 
-p + geom_smooth(method = lm) + geom_point()
-
+p + geom_point() +
+    geom_smooth(method = "gam") +
+    scale_x_log10()
 ```
 
 
