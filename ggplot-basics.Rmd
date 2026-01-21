@@ -29,5 +29,17 @@ p + geom_point(alpha = 0.3) +
          caption = "Source: Gapminder.")
 ```
 
+## Figure 3.16
 
+```{r 3.16 plot}
 
+p <- ggplot(data = gapminder,
+            mapping = aes(x = gdpPercap,
+                          y = lifeExp,
+                          color = continent))
+
+p + geom_point() +
+    geom_smooth(method = "loess") +
+    scale_x_log10()
+
+```
