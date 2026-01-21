@@ -18,28 +18,10 @@ library(gapminder)
 p <- ggplot(data = gapminder,
             mapping = aes(x = gdpPercap,
                           y = lifeExp))
-p + geom_point() 
+
+p + geom_point()
 
 ```
 
-### Figure 3.16
- 
-Here you will make your next figure.
-
-```{r 3.16 plot}
-p <- ggplot(data = gapminder,
-            mapping = aes(x = gdpPercap,
-                          y = lifeExp,
-                          color = continent,
-                          fill = lifeExp))
-p + geom_smooth()
-```
-
-
-### Orignal graph
-
-Continue practicing by accessing an unfamiliar data set from another package.
-You can load a dataset of your choice to show you can build a graphic using ggplot layers.
-Here are some sample data sets [https://stat.ethz.ch/R-manual/R-devel/library/datasets/html/00Index.html](https://stat.ethz.ch/R-manual/R-devel/library/datasets/html/00Index.html)
 
 
