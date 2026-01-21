@@ -22,7 +22,7 @@ p <- ggplot(data = gapminder,
 
 p + geom_point() +
     geom_smooth(method = "gam") +
-    scale_x_log10()
+    scale_x_log10(labels = scales::dollar)
 ```
 
 
