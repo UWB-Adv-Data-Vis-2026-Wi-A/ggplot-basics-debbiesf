@@ -36,7 +36,8 @@ p + geom_point(alpha = 0.3) +
 p <- ggplot(data = gapminder,
             mapping = aes(x = gdpPercap,
                           y = lifeExp,
-                          color = continent))
+                          color = continent,
+                          fill = continent))
 
 p + geom_point() +
     geom_smooth(method = "loess") +
